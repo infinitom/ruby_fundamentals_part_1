@@ -10,7 +10,13 @@ one_to_hundred = (1..100)
 
 # Display one to hundred sequentially
 one_to_hundred.each do |number|
-  print "#{number}\s"
+  if (number%3==0 && number%5==0)
+    print "BitMaker\s"
+  elsif (number%3==0)
+    print "Bit\s"
+  else
+    print "#{number}\s"
+  end
 end
 
 puts "\n"
